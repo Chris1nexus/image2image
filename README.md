@@ -42,10 +42,21 @@ After this, everything is setup to start training the image2image models
 
 
 # Training
+
 To train an image2image translation model, one must only specify the dataset names   
 following the huggingface dataset convention {organization_name}/{dataset_name} in the following command line args:   
 * --source_dataset_name
 * --target_dataset_name 
+
+In order to correctly configure the training procedure, it is necessary to first launch in a shell the accelerate config command(Only needs to be done once).  
+Note that in order to launch multi gpu single machine training, you need to set the accelerate config with **multi-gpu training** and   
+to the question **How many processes in total will you use?**   
+Answer with the **number of gpus that you intend to use** 
+```bash
+accelerate config
+```
+
+After this, cd into im2im/train to launch the training script as follows
 
 Single or multi gpu training is automatically set up by accelerate by running the following command to easily start the training of the image translation model
 
