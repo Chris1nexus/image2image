@@ -1,0 +1,14 @@
+aiohttp
+aiofiles
+datasets
+asyncio
+requests
+torch
+torchvision
+accelerate
+wandb
+huggingface-hub
+scipy
+kornia
+pytorch-fid
+scikit-learn
