@@ -6,8 +6,8 @@ aiofiles
 datasets
 asyncio
 requests
-torch==1.8.2+cu111 
-torchvision==0.9.2+cu111
+torch==1.8.2+cu111@https://download.pytorch.org/whl/lts/1.8/torch_lts.html
+torchvision==0.9.2+cu111@https://download.pytorch.org/whl/lts/1.8/torch_lts.html
 accelerate
 wandb
 huggingface-hub
