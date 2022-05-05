@@ -53,8 +53,8 @@ Single or multi gpu training is automatically set up by accelerate by running th
 ```bash
 accelerate launch --config_file ~/.cache/huggingface/accelerate/default_config.yaml \
         train.py \
-        --source_dataset_name chris1/GTA5 \ 
-        --target_dataset_name chris1/cityscapes \        
+        --source_dataset_name Chris1/GTA5 \ 
+        --target_dataset_name Chris1/cityscapes \        
         --batch_size 8 \
         --beta1 0.5 \
         --beta2 0.999 \
@@ -71,7 +71,7 @@ accelerate launch --config_file ~/.cache/huggingface/accelerate/default_config.y
         --n_residual_blocks 9 \
         --num_epochs 200 \
         --num_workers 8 \
-        --organization_name huggingnft \
+        --organization_name Chris1 \
         --push_to_hub \
         --sample_interval 10 \
         --wandb \

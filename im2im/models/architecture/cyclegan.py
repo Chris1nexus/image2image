@@ -3,7 +3,7 @@ import torch.nn.functional as F
 import torch
 
 from im2im.models.torch_mixin import TemplateModelHubMixin
-from im2im.models.card import TEMPLATE_CYCLEGAN_CARD_PATH
+from im2im import TEMPLATE_CYCLEGAN_CARD_PATH
 
 
 ##############################
@@ -29,7 +29,7 @@ class ResidualBlock(nn.Module):
         return x + self.block(x)
 
 
-class GeneratorResNet(nn.Module, HugGANModelHubMixin):
+class GeneratorResNet(nn.Module, TemplateModelHubMixin):
     def __init__(self, input_shape, num_residual_blocks):
         super(GeneratorResNet, self).__init__()
 

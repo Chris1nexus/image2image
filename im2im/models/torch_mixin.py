@@ -5,7 +5,7 @@ import os
 
 from huggingface_hub import PyTorchModelHubMixin, HfApi, HfFolder, Repository
 
-from im2im.models.card import TEMPLATE_MODEL_CARD_PATH
+from im2im import TEMPLATE_MODEL_CARD_PATH
 
 
 class TemplateModelHubMixin(PyTorchModelHubMixin):
